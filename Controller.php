@@ -25,7 +25,6 @@ function waiters() {
   require("models/Waiter.php");
 
   $waiters = Waiter::all();
-  $waiters = Waiter::all();
 
   if(count($waiters)) {
     $title = "Liste de mes serveurs";
