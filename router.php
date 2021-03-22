@@ -4,4 +4,10 @@ require("Controller.php");
 
 $action = $_GET["action"] ?? "home"; 
 
-$action();
+try {
+  $action();
+} catch (\Throwable $th) {
+  notFound();
+}
+
+

@@ -34,3 +34,7 @@ function waiters() {
 
   require("views/waiters.php");
 }
+
+function notFound() {
+  require("views/notFound.php");
+}
